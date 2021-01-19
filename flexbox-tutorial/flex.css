@@ -1,0 +1,71 @@
+/* https://www.youtube.com/watch?v=JJSoEo8JSnc&t=383s */
+
+@media (min-width: 768px) {
+  .container-1 {
+    display: flex;
+    /* align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        align-items: stretch;
+        flex-direction: column;
+        */
+  }
+
+  .container-2 {
+    display: flex;
+    /*
+          justify-content: center;
+          justify-content: flex-start;
+          justify-content: flex-end;
+          justify-content: space-between;
+          justify-content: flex-around;
+          
+          */
+    justify-content: space-between;
+  }
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div {
+  border: 1px #cccccc solid;
+  padding: 10px;
+}
+
+/* 
+flex-basis is like width but work only when it is under flex scope. Meaning here 
+display: flex will only be at >=768px so only >=768px will use flex-basis width else 
+not act like defined width. Just coomentout width and play with screen resize.
+*/
+.container-2-box {
+  flex-basis: 27%;
+  /* width: 27%; */
+}
+
+.container-3-box {
+    flex-basis: 12%;
+    /* width: 27%; */
+  }
+
+/* flex is for setting width */
+/* order is for setting the order of coloumn */
+.box-1 {
+  flex: 2; /*for width*/
+  order: 2;
+}
+
+.box-2 {
+  flex: 1; /*for width*/
+  order: 3;
+}
+
+.box-3 {
+  flex: 1; /*for width*/
+  order: 1;
+}
