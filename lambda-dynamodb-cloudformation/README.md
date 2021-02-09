@@ -5,3 +5,6 @@
 - GET: https://ccado5plkk.execute-api.ap-south-1.amazonaws.com/dev/post/{id}
 - PUT: https://ccado5plkk.execute-api.ap-south-1.amazonaws.com/dev/post/{id}
 - DELETE: https://ccado5plkk.execute-api.ap-south-1.amazonaws.com/dev/post/{id}
+
+### install serverless -g
+### serverless deploy
